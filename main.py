@@ -117,4 +117,4 @@ api.add_resource(AddBlue, '/add_blue/<int:number>')
 api.init_app(app)
 
 if __name__ == '__main__':
-    serve(app, host="0.0.0.0", port=3000, threads=server_threads_count)
+    serve(app, host="0.0.0.0", port=80, threads=server_threads_count)
