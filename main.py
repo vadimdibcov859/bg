@@ -67,7 +67,7 @@ def start_task(start_number, end_number):
 class GetNumber(Resource):
     def get(self, phone_id):
         if phone_id in phone_numbers:
-            return '+' + phone_numbers[phone_id]
+            return phone_numbers[phone_id]
         else:
             return 'TO DO "EMPTY" NUMBER'
 
